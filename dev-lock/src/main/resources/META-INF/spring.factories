@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zdk.dev.template.lock.redisson.config.RedissonConfig,\
+com.zdk.dev.template.lock.redisson.service.RedissonService
