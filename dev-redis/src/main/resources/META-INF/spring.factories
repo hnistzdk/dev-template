@@ -1,4 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.zdk.dev.template.redis.config.RedisConfig,\
-com.zdk.dev.template.redis.config.JedisConfig,\
-com.zdk.dev.template.redis.service.RedisService
+top.zaiolos.dev.template.redis.config.RedisConfig,\
+top.zaiolos.dev.template.redis.config.JedisConfig,\
+top.zaiolos.dev.template.redis.service.RedisService

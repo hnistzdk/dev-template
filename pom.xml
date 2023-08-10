@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.zdk.dev.template</groupId>
+    <groupId>top.zaiolos.dev.template</groupId>
     <artifactId>dev-template</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
@@ -147,6 +147,12 @@
                 <version>${hutool.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-core</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
             <!-- pagehelper 分页插件 -->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
@@ -242,13 +248,13 @@
             </dependency>
 
             <dependency>
-                <groupId>com.zdk.dev.template</groupId>
+                <groupId>top.zaiolos.dev.template</groupId>
                 <artifactId>dev-redis</artifactId>
                 <version>${dev-template.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.zdk.dev.template</groupId>
+                <groupId>top.zaiolos.dev.template</groupId>
                 <artifactId>dev-lock</artifactId>
                 <version>${dev-template.version}</version>
             </dependency>
