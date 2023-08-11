@@ -8,9 +8,10 @@
     <artifactId>dev-template</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>dev-redis</module>
+        <module>dev-cache-redis</module>
         <module>dev-test</module>
         <module>dev-lock</module>
+        <module>dev-cache-local</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -249,7 +250,13 @@
 
             <dependency>
                 <groupId>top.zaiolos.dev.template</groupId>
-                <artifactId>dev-redis</artifactId>
+                <artifactId>dev-cache-redis</artifactId>
+                <version>${dev-template.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>top.zaiolos.dev.template</groupId>
+                <artifactId>dev-cache-local</artifactId>
                 <version>${dev-template.version}</version>
             </dependency>
 
@@ -258,7 +265,6 @@
                 <artifactId>dev-lock</artifactId>
                 <version>${dev-template.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 

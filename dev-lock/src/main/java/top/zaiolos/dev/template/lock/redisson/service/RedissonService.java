@@ -2,6 +2,8 @@ package top.zaiolos.dev.template.lock.redisson.service;
 
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 import top.zaiolos.dev.template.lock.redisson.enums.LockErrorEnum;
 import top.zaiolos.dev.template.lock.redisson.exception.LockException;

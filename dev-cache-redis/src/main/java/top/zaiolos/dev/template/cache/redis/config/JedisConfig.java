@@ -1,6 +1,7 @@
-package top.zaiolos.dev.template.redis.config;
+package top.zaiolos.dev.template.cache.redis.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +16,7 @@ import redis.clients.jedis.JedisPoolConfig;
  * @Date 2023/6/12 17:36
  */
 @Configuration
-@ConditionalOnProperty(prefix = "spring.redis",name = {"host","port"})
+@ConditionalOnProperty(prefix = "zaiolos.redis",name = {"enable,jedis"},havingValue = "true")
 public class JedisConfig {
 
     @Autowired

@@ -1,0 +1,14 @@
+zaiolos:
+  caffeine:
+    enable: true
+  redis:
+    enable: false
+    jedis: false
+  redisson:
+    enable: false
+
+spring:
+  redis:
+    redisson:
+      file: classpath:redisson.yaml
+

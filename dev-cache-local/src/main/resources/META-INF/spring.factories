@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+top.zaiolos.dev.template.cache.local.caffeine.config.CaffeineConfig

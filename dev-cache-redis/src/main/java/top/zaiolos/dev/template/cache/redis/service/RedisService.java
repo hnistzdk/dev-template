@@ -1,6 +1,6 @@
-package top.zaiolos.dev.template.redis.service;
+package top.zaiolos.dev.template.cache.redis.service;
 
-import top.zaiolos.dev.template.redis.config.RedisConfig;
+import top.zaiolos.dev.template.cache.redis.config.RedisConfig;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.data.redis.core.BoundSetOperations;

@@ -29,12 +29,17 @@
 
         <dependency>
             <groupId>top.zaiolos.dev.template</groupId>
-            <artifactId>dev-redis</artifactId>
+            <artifactId>dev-cache-redis</artifactId>
         </dependency>
 
         <dependency>
             <groupId>top.zaiolos.dev.template</groupId>
             <artifactId>dev-lock</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>top.zaiolos.dev.template</groupId>
+            <artifactId>dev-cache-local</artifactId>
         </dependency>
     </dependencies>
 

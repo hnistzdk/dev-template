@@ -1,4 +1,4 @@
-package top.zaiolos.dev.template.redis.config;
+package top.zaiolos.dev.template.cache.redis.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -38,7 +38,7 @@ import java.time.Duration;
 @Configuration
 @EnableCaching
 @AutoConfigureBefore(RedisAutoConfiguration.class)
-@ConditionalOnProperty(prefix = "spring.redis",name = {"host","port"})
+@ConditionalOnProperty(prefix = "zaiolos.redis",name = {"enable"},havingValue = "true")
 public class RedisConfig {
 
     @Bean

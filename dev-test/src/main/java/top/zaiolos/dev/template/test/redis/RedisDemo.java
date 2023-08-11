@@ -1,7 +1,10 @@
 package top.zaiolos.dev.template.test.redis;
 
-import top.zaiolos.dev.template.lock.redisson.service.RedissonService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+import top.zaiolos.dev.template.cache.redis.service.RedisService;
+import top.zaiolos.dev.template.lock.redisson.service.RedissonService;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -14,8 +17,8 @@ import javax.annotation.Resource;
 @Service
 public class RedisDemo {
 
-//    @Resource
-//    private RedisService redisService;
+    @Autowired(required = false)
+    private RedisService redisService;
 
     @Resource
     private RedissonService redissonService;
@@ -26,7 +29,7 @@ public class RedisDemo {
 //        RedisTemplate redisTemplate = redisService.getRedisTemplate();
 //        System.out.println("redisTemplate = " + redisTemplate);
 //
-        System.out.println("redissonService = " + redissonService);
+//        System.out.println("redissonService = " + redissonService);
     }
 
 }

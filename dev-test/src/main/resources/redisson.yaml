@@ -1,0 +1,4 @@
+singleServerConfig:
+  password: zdk13696086376.
+  address: "redis://zaiolos.top:6379"
+  database: 1
